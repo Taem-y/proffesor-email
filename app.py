@@ -45,7 +45,7 @@ if submit_btn:
         with st.spinner("AI가 가장 예의 바른 표현을 찾는 중..."):
             try:
                 # [수정됨] 내 API 키로 클라이언트 생성
-                client = OpenAI(api_key=api_key)
+                client = OpenAI(api_key="api_key")
                 
                 prompt = f"""
                 당신은 예의 바르고 논리적인 대학생입니다. 아래 정보를 바탕으로 교수님께 보낼 정중한 이메일을 작성하세요.
@@ -78,6 +78,7 @@ if submit_btn:
             except Exception as e:
 
                 st.error(f"오류가 발생했습니다: {e}")
+
 
 
 
