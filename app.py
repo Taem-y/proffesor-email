@@ -15,7 +15,7 @@ api_key = "OPENAI_API_KEY"
 # 3. 메인 화면 헤더
 st.title("🎓 프로페서 프로토콜")
 st.subheader("교수님 답장 3분 컷! AI 이메일 생성기")
-st.markdown("API 키 필요 없음! 그냥 상황만 입력하세요.")
+st.markdown("어떤 상황인지만 적으면 교수님께 바로 보낼 수 있도록 만들어줄게요!")
 
 # 4. 사용자 입력 폼
 with st.form("email_form"):
@@ -77,4 +77,5 @@ if submit_btn:
             except Exception as e:
 
                 st.error(f"오류가 발생했습니다: {e}")
+
 
