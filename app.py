@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+Authorization: Bearer OPENAI_API_KEY
 
 # 1. 페이지 기본 설정
 st.set_page_config(
@@ -77,6 +78,7 @@ if submit_btn:
             except Exception as e:
 
                 st.error(f"오류가 발생했습니다: {e}")
+
 
 
 
