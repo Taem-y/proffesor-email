@@ -10,7 +10,7 @@ st.set_page_config(
 
 # [수정됨] 사이드바에서 키 입력받는 부분 삭제함!
 # 대신 비밀 저장소(secrets)에서 내 키를 가져옴
-api_key = "OPENAI_API_KEY"
+api_key = OPENAI_API_KEY
 
 # 3. 메인 화면 헤더
 st.title("🎓 프로페서 프로토콜")
@@ -77,5 +77,6 @@ if submit_btn:
             except Exception as e:
 
                 st.error(f"오류가 발생했습니다: {e}")
+
 
 
